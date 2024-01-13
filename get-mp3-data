@@ -1,1 +1,4 @@
-ls /Volumes/Samsung\ USB/Audiobooks
+cd /Volumes/Samsung\ USB/Audiobooks;
+pwd;
+ls;
+cd -;
