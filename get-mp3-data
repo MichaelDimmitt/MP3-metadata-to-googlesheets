@@ -1,7 +1,14 @@
-cd /Volumes/Samsung\ USB/Audiobooks;
-pwd;
-ls;
-cd -;
+# cd /Volumes/Samsung\ USB/Audiobooks;
+# pwd;
+# ls;
+# cd -;
+# 
 
-data=$(ffprobe -print_format json /Volumes/"Samsung USB"/Audiobooks/"The Final Empire: Mistborn Book 1.mp3" 2>&1 | grep -B90 Chapters: | grep -v Chapters | grep -A90 Metadata | grep -v Metadata)
-echo "{$data}"
+get-mp3-data() {
+  local book="The Final Empire: Mistborn Book 1.mp3"
+  local jqObject=$(ffprobe -v quiet -print_format json -show_format -show_streams /Volumes/"Samsung USB"/Audiobooks/"$book" 2>&1);
+  local duration=$(echo "$jqObject" | jq '.format.duration');
+  echo "$jqObject" | jq --arg v "$duration" '.format.tags + {'duration': $v}';
+};
+get-mp3-data
+
