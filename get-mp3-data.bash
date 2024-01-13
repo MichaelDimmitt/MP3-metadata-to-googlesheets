@@ -22,7 +22,6 @@ get-mp3-data() {
   cat books.json | jq length
 
 };
-get-mp3-data
 
 # Accomplished so far: 
 # 1. get the json in the correct format for a single book.
@@ -37,3 +36,18 @@ get-mp3-data
 # 1. traverse subdirectories and build absolute paths
 # 2. iterate subdirectories building giant json and susbsequent csv (or small json, and add rows to csv file each time.)
 # 2. accept a directory as input so the solution is generalized and usable for others.
+
+reset() {
+  rm books.json temp*;
+  echo [] > books.json
+}
+
+# If any arguement is sent to the command reset all files.
+if [ -z "$1" ]
+then
+  # example: bash get-mp3-data.bash
+  get-mp3-data;
+else 
+  # example: get-mp3-data.bash anyvalue
+  reset;
+fi
