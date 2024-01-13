@@ -2,3 +2,6 @@ cd /Volumes/Samsung\ USB/Audiobooks;
 pwd;
 ls;
 cd -;
+
+data=$(ffprobe -print_format json /Volumes/"Samsung USB"/Audiobooks/"The Final Empire: Mistborn Book 1.mp3" 2>&1 | grep -B90 Chapters: | grep -v Chapters | grep -A90 Metadata | grep -v Metadata)
+echo "{$data}"
