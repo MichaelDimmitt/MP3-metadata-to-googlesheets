@@ -8,7 +8,7 @@ get-mp3-data() {
   local book="The Final Empire: Mistborn Book 1.mp3"
   local jqObject=$(ffprobe -v quiet -print_format json -show_format -show_streams /Volumes/"Samsung USB"/Audiobooks/"$book" 2>&1);
   local duration=$(echo "$jqObject" | jq '.format.duration');
-  echo "$jqObject" | jq --arg v "$duration" '.format.tags + {'duration': $v}';
+  echo "$jqObject" | jq --arg v "$duration" '.format.tags + {'duration': $v}' | jq 'del(.copyright)';
 };
 get-mp3-data
 

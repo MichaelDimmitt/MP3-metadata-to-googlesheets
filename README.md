@@ -1,3 +1,6 @@
+## Why
+I am doing this so I can make a google sheet to sort and filter my audio books
+
 ## traverse-get-mp3-metadata
 bash script to traverse deeply nested dir's and get metadata from an mp3 file into a csv.
 
@@ -6,5 +9,4 @@ ffmpeg - and ffprobe which comes as part of ffmpeg
 
 ## helpful links:
 https://askubuntu.com/a/754922/684192
-
 
