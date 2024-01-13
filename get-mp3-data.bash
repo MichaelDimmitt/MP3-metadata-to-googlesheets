@@ -31,9 +31,9 @@ get-mp3-data() {
 # 5. add a flag to reset the environment (simple: any arg)
 
 # Remaining work:
-# 1. traverse subdirectories and build absolute paths
-# 2. iterate subdirectories building giant json and susbsequent csv (or small json, and add rows to csv file each time.)
-# 2. accept a directory as input so the solution is generalized and usable for others.
+# 1. traverse subdirectories and build absolute paths (see file: traverse-folder.bash)
+# 2. iterate subdirectories, probably using read, building giant json and susbsequent csv (or small json, and add rows to csv file each time.)
+# 3. accept a directory as input so the solution is generalized and usable for others.
 
 reset() {
   rm books.json temp*;
