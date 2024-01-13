@@ -25,14 +25,12 @@ get-mp3-data() {
 
 # Accomplished so far: 
 # 1. get the json in the correct format for a single book.
+# 2. convert the json to csv
+# 3. upload json to spreadsheet to make sure the format looks good.
+# 4. add a second book, which would be a second json element and should be a second row on the db
+# 5. add a flag to reset the environment (simple: any arg)
 
 # Remaining work:
-# 1. convert the json to csv
-# 2. upload json to spreadsheet to make sure the format looks good.
-# Q: does the json to csv automatically create headers? A: I would expect that it would.
-# 3. add a second book, which would be a second json element and should be a second row on the db
-
-# Future if everything above worked perfect:
 # 1. traverse subdirectories and build absolute paths
 # 2. iterate subdirectories building giant json and susbsequent csv (or small json, and add rows to csv file each time.)
 # 2. accept a directory as input so the solution is generalized and usable for others.
