@@ -10,10 +10,11 @@ I am doing this so I can make a google sheet to sort and filter my audio books
     3. Drag in Books.csv and click confirm.
     4. ... now wait for it to loads and you should now see all of the books for viewing filtering and sorting!
 
-## dependencies
+## Dependencies
 ffmpeg - and ffprobe which comes as part of ffmpeg
+find - native to macOS and most linux distros.
 
-## helpful links:
+## Helpful Links:
 https://askubuntu.com/a/754922/684192
 https://stackoverflow.com/questions/34745451/passing-arguments-to-jq-filter
 https://stackoverflow.com/a/47024050/5283424
