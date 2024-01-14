@@ -4,7 +4,11 @@ I am doing this so I can make a google sheet to sort and filter my audio books
 ## MP3-metadata-to-googlesheets
 1. Run the script passing telling as an argument the directory that either the mp3 files or contains the subfolders with the mp3 files.
 2. Books.csv gets generated
-3. Make a new google sheet, click File - Import - Upload - drag in Books.csv ... now you have all of the books for sorting!
+3. Follow google sheets instructions
+    1. Make a new google sheet
+    2. Click File - Import - Upload
+    3. Drag in Books.csv and click confirm.
+    4. ... now wait for it to loads and you should now see all of the books for viewing filtering and sorting!
 
 ## dependencies
 ffmpeg - and ffprobe which comes as part of ffmpeg
