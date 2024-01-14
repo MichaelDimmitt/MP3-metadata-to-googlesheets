@@ -1,8 +1,10 @@
 ## Why
 I am doing this so I can make a google sheet to sort and filter my audio books
 
-## traverse-get-mp3-metadata
-bash script to traverse deeply nested dir's and get metadata from an mp3 file into a csv.
+## MP3-metadata-to-googlesheets
+1. Run the script passing telling as an argument the directory that either the mp3 files or contains the subfolders with the mp3 files.
+2. Books.csv gets generated
+3. Make a new google sheet, click File - Import - Upload - drag in Books.csv ... now you have all of the books for sorting!
 
 ## dependencies
 ffmpeg - and ffprobe which comes as part of ffmpeg
