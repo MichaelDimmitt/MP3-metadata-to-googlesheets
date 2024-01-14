@@ -9,7 +9,10 @@
     # 7. pass each mp3 book to the converter that adds the book to the csv.
 
   # Remaining work:
-    # 1. scale to the full library and see if it works.
+    # 1. pass in file path as an argument. (remove reset or have a different flag trigger)
+    # 2. scale to the full library and see if it works.
+    # 3. rearange columns to a better format.
+    # 4. update existing list instead of re-creating from scratch
 #
 convert-metadata-to-csv() {
   # reset files to rebuild the json which will later convert to csv.
