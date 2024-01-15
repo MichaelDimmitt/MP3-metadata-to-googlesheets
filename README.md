@@ -1,6 +1,9 @@
 ## Why
 I am doing this so I can make a google sheet to sort and filter my audio books
 
+## See it in action: 
+https://docs.google.com/spreadsheets/d/1f5WwIZD5n3HNiz-NG952ji-ClVlzjDQVGS-4LirySKs/edit?usp=sharing
+
 ## MP3-metadata-to-googlesheets
 1. Run the script passing telling as an argument the directory that either the mp3 files or contains the subfolders with the mp3 files.
 2. Books.csv gets generated
