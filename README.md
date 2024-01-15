@@ -10,9 +10,18 @@ I am doing this so I can make a google sheet to sort and filter my audio books
     3. Drag in Books.csv and click confirm.
     4. ... now wait for it to loads and you should now see all of the books for viewing filtering and sorting!
 
+You may need to use detox: to fix file names before running this program.
+```bash
+# example usage:
+# detox -r /Volumes/Samsung\ USB/
+```
+
 ## Dependencies
 ffmpeg - and ffprobe which comes as part of ffmpeg
 find - native to macOS and most linux distros.
+
+detox - fix bad file names. (downloadable on mac and linux not sure with windows)
+https://github.com/dharple/detox
 
 ## Helpful Links:
 https://askubuntu.com/a/754922/684192

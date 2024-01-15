@@ -19,8 +19,8 @@ convert-metadata-to-csv() {
   reset;
   # goes through all subdirectories and returns absolute path of all mp3 files.
   # get-mp3-data()
-  mp3AbsolutePaths=$(find /Volumes/"Samsung USB"/Audiobooks -name '*.mp3');
-  # echo "$mp3AbsolutePaths"
+  mp3AbsolutePaths=$(find /Volumes/"Samsung USB"/ -name '*.mp3');
+  echo "$mp3AbsolutePaths"
   # read 
   while read -r line; do convert-metadata-to-json-and-then-csv "$line"; done <<< "$mp3AbsolutePaths"
   echo "It worked! the above numbers show the number of books added, check books.csv for the final result!"
